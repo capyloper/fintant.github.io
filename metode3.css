@@ -1,0 +1,76 @@
+.kolom{
+    padding-left: 80px;
+    padding-top: 40px;
+    padding-right: 20%;
+}
+
+h1{
+    font-size: 50px;
+    color: #2e5e25;
+}
+
+.kolom .budgeting{
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.kolom .budgeting2{
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.kolom .pengertian{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.kolom .pengertian2{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.kolom .menabung{
+        padding-top: 10px;
+        font-size: 20px;
+}
+h2{
+    padding-top: 15px;
+    font-weight: bold;
+    color: #2e5e25;
+}
+
+.kolom ul{
+    list-style: none;
+    margin: auto;
+    position: relative;
+    display: inline;
+}
+
+.kolom ul li a{
+    color: #000000;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 8px 15px;
+    display: inline;
+    text-align: center;
+}
+
+h3{
+    padding-top: 10px;
+    color: #2e5e25;
+
+}
+
+.menumetode li a:hover{
+    color: rgb(70, 187, 86);
+    box-shadow: none; 
+}
+
+.copy{
+     color: rgba(0,0,0,.7); 
+     text-shadow: none;
+     background:none; 
+     text-align: center; 
+     padding:5%;
+    }

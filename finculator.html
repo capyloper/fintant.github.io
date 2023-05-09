@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fintant-Finculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nyobanyoba.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"rel="stylesheet"
+    />
+    <link rel="icon" href="fintant.png">
+</head>
+<body>
+    <nav>
+        <div class="fintant">
+            <img src="fintant.png" alt="fintant" width="60" height="60">
+        </div>
+        <div class="logo">fintant</div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li>
+                <a href="#">Materi</a>
+                <ul>
+                    <li><a href="pendahuluan.html">Pendahuluan</a></li>
+                    <li>
+                        <a href="budgeting.html">Budgeting
+                            <span class="fa fa-plus"></span>
+                        </a>
+                        <ul>
+                            <li><a href="metode1.html">50/30/20</a></li>
+                            <li><a href="metode2.html">80/20</a></li>
+                            <li><a href="metode3.html">Kakeibo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Alat</a>
+                <ul>
+                    <li><a href="finote.html">finote</a></li>
+                    <li><a href="finculator.html">finculator</a></li>
+                </ul>
+            </li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="dukungkami.html">Dukung Kami</a></li>
+        </ul>
+    </nav>    
+
+<div class="container">
+    <div class="input-wrapper">
+        <div class="wrapper">
+            <label for="tabungan">Total Tabungan (Rp) :</label>
+            <input type="number" id="tabungan" value="" placeholder="0">
+        </div>
+        <div class="wrapper">
+            <label for="persen">Total Pemakaian (%) :</label>
+            <input type="number" id="persen" value="" placeholder="50 (Rekomendasi)">
+        </div>
+        </div>
+        <label class= "targetBiaya" for="target">Target Biaya (Rp) :</label>
+        <div class="time-wrapper">
+            
+            <input type="number" id="target" value="" placeholder="0">
+        </div>
+        <button id="calculate-btn">hitung!</button>
+        <div id="result"></div>
+    </div>
+</div>
+</div>
+
+<script src="nyobanyoba.js"></script>
+
+    <footer class="copy">
+        &copy; <em id="2023"></em>Kelompok 2 XI-4
+    </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.gambar{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1000px;
+    padding-left: 1000px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.gambar img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}

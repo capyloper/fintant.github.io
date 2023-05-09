@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fintant-Finote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="finote.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"rel="stylesheet"
+    />
+    <link rel="icon" href="fintant.png">
+</head>
+<body>
+    <nav>
+        <div class="fintant">
+            <img src="fintant.png" alt="fintant" width="60" height="60">
+        </div>
+        <div class="logo">fintant</div>
+        <ul>
+            <li><a href="index.html">Utama</a></li>
+            <li>
+                <a href="#">Materi</a>
+                <ul>
+                    <li><a href="pendahuluan.html">Pendahuluan</a></li>
+                    <li>
+                        <a href="budgeting.html">Budgeting
+                            <span class="fa fa-plus"></span>
+                        </a>
+                        <ul>
+                            <li><a href="metode1.html">50/30/20</a></li>
+                            <li><a href="metode2.html">80/20</a></li>
+                            <li><a href="metode3.html">Kakeibo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Alat</a>
+                <ul>
+                    <li><a href="finote.html">finote</a></li>
+                    <li><a href="finculator.html">finculator</a></li>
+                </ul>
+            </li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="dukungkami.html">Dukung Kami</a></li>
+        </ul>
+    </nav>  
+    
+    <div class="catatan">
+    <script>
+        function myFunction2()
+        {
+            var transportasi = parseInt(document.getElementById("transportasi").value);
+            var makan = parseInt(document.getElementById("makan").value);
+            var alatTulis = parseInt(document.getElementById("alatTulis").value);
+            var jajan = parseInt(document.getElementById("jajan").value);
+            var nongki = parseInt(document.getElementById("nongki").value);
+            var personal = parseInt(document.getElementById("personal").value);
+            var lain = parseInt(document.getElementById("lain").value);
+            document.getElementById("demo").innerHTML = transportasi + makan + nongki + jajan + lain + personal + alatTulis;
+
+        }
+
+
+    function myFunction()
+    {
+        var pemasukan = parseInt(document.getElementById("pemasukan").value);
+        var transportasi = parseInt(document.getElementById("transportasi").value);
+            var makan = parseInt(document.getElementById("makan").value);
+            var alatTulis = parseInt(document.getElementById("alatTulis").value);
+            var jajan = parseInt(document.getElementById("jajan").value);
+            var nongki = parseInt(document.getElementById("nongki").value);
+            var personal = parseInt(document.getElementById("personal").value);
+            var lain = parseInt(document.getElementById("lain").value);
+       var output= document.getElementById("output").innerHTML = pemasukan - (transportasi + makan + nongki + jajan + lain + personal + alatTulis);
+        document.getElementById("output2").innerHTML = output *(60/100);
+        document.getElementById("output3").innerHTML = output *(40/100);
+    }
+
+    </script>
+    <h3> Pemasukan (Bulan)</h3>
+    <p class="pemasukan">
+        <form action="/action_page.php" id="numform" oninput="y.value=parseInt(pemasukan.value)*(50/100)">
+            Pemasukan : Rp <input type="number" id="pemasukan" name="pemasukan" placeholder="0">
+    </form>
+    </p>
+
+    <br>
+    <h3>Pengeluaran (Bulan)</h3>
+
+    <p class="pengeluaran">
+        <form action="/action_page.php" id="anjay" oninput="pengeluaran.value=parseInt(transportasi.value)+parseInt(makan.value)+parseInt(jajan.value)+parseInt(alatTulis.value)+parseInt(personal.value)+parseInt(nongki.value)+parseInt(lain.value)">
+            Transportasi (Bensin/Parkir/Ongkos) : Rp.<input type="number" id="transportasi" name="transportasi" placeholder="0">
+            <br>
+            Makan (Makan Berat) : Rp.<input type="number" id="makan" name="makan" placeholder="0">
+            <br>
+            Jajan : Rp.<input type="number" id="jajan" name="jajan" placeholder="0">
+            <br>
+            Alat Tulis : Rp.<input type="number" id="alatTulis" name="alatTulis" placeholder="0">
+            <br>
+            Personal : Rp.<input type="number" id="personal" name="personal" placeholder="0">
+            <br>
+            Nongki (fine dining, bioskop, dll.) : Rp.<input type="number" id="nongki" name="nongki" placeholder="0">
+            <br>
+            Lain-lain : Rp.<input type="number" id="lain" name="lain" placeholder="0">
+            <br><br>
+        </form>
+    <div class="tulisan">
+        <h4 class="atas">Saran pengeluaran kurang dari : Rp.<output form="numform" id="y" name="y" for="pemasukan*(50/100)"></output> </h4>
+    <br>
+            <h4 class="atas">
+              Total pengeluaran : Rp.<output form="anjay" id="pengeluaran" name="pengeluaran" for="transportasi + makan + nongki + jajan + lain + personal + alatTulis"></output>
+        </h4>
+    </p>
+    <br>
+    <button onclick="myFunction(), myFunction2()">hitung!</button>
+    <br>
+    <br>
+    <h4 class="bersih">Total sisa uang bersih (Rp):</h4><p class= "dudul" id="output"></p>
+    <br>
+    <h4 class="bawah">Rekomendasi biaya keinginan(Rp):</h4><p class= "dudul" id="output2"></p>
+    <br>
+    <h4 class="bawah">Rekomendasi biaya tabungan (Rp):</h4><p class= "dudul" id="output3"></p>
+    <br>
+</div>
+
+</div>
+
+
+    <footer class="copy">
+        &copy; <em id="2023"></em>Kelompok 2 XI-4
+    </footer>
+
+
+
+
+    
+</body>
+</html>

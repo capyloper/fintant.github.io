@@ -1,0 +1,22 @@
+.kolom{
+    padding: 10%;
+    font-size: large;
+}
+
+.kolom .deskripsi{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 20px;
+    color: #1f3310;
+
+}
+
+h1{
+    font-size: 40px;
+    color: #2e5e25;
+}
+
+h2 {
+    font-size: 30px;
+    color: #499639;
+}

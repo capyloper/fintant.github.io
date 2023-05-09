@@ -1,0 +1,74 @@
+
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  
+  padding-left: 70px;
+  padding-top: 30px;
+  padding-right: 30%;
+}
+
+.anjay{
+    border-radius: 5px;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-right: 40px;
+  }
+
+  .asu{
+    border-radius: 5px;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-right: 50%;
+  }
+
+label{
+    color: #2e5e25;
+    font-size: large;
+    font-weight: bold;
+}
+
+h1{
+    color: #2e5e25;
+    padding-left: 40px;
+    padding-top: 40px;
+    font-size: 30px;
+}
