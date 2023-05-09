@@ -13,12 +13,7 @@ body{
 .catatan{
     background-color: white;
     position: absolute;
-    transform: translate(-50%,-50%);
-    top: 85%;
-    left: 50%;
-    width: 80vw;
-    max-width: 800px;
-    min-width: 100px;
+    margin-top: 60%;
     padding: 20px 30px ;
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);

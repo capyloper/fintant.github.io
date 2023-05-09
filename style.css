@@ -11,8 +11,9 @@ body {
 }
 
 nav {
+  position: fixed;
   background: #3d8d43;
-  z-index: 999;
+  z-index: 9999;
 }
 
 nav::after {
@@ -41,6 +42,7 @@ nav ul {
   list-style: none;
   margin-right: 40px;
   position: relative;
+
 }
 
 nav ul li {
